@@ -12,7 +12,6 @@ window.resizable(False, False)
 # Title Label
 tk.Label(window, text="Contact Us", font=("Arial", 16, "bold")).pack(pady=10)
 
-# --- Input Fields ---
 tk.Label(window, text="Full Name:", font=("Arial", 12)).pack(pady=5)
 name_entry = tk.Entry(window, width=30, font=("Arial", 12))
 name_entry.pack()
@@ -59,6 +58,7 @@ def submit():
     email_entry.delete(0, "end")
     phone_entry.delete(0, "end")
     message_entry.delete("1.0", "end")
+
 
 # --- Submit Button ---
 tk.Button(window, text="Submit", command=submit, font=("Arial", 12)).pack(pady=20)
